@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+   <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/game.css" type="text/css" media="screen"></link>
+	<script type="text/javascript" src="./js/chess.js"></script>
+	<title>Luzhanqi</title>
+</head>
+<body>
+
+	<h1>Luzhanqi</h1>
+	<div class="menu" id="menu">
+		<div class="firstrow">
+			<div id="div00" class="droptarget"></div>
+			<div id="div01" class="droptarget"></div>
+			<div id="div02" class="droptarget"></div>
+			<div id="div03" class="droptarget"></div>
+			<div id="div04" class="droptarget"></div>
+			<div id="div05" class="droptarget"></div>
+			<div id="div06" class="droptarget"></div>
+			<div id="div07" class="droptarget"></div>
+			<div id="div08" class="droptarget"></div>
+			<div id="div09" class="droptarget"></div>
+			<div id="div010" class="droptarget"></div>
+			<div id="div011" class="droptarget"></div>
+			<div id="div012" class="droptarget"></div>
+		</div>
+		<div class="secondrow">
+			<div id="div10" class="droptarget"></div>
+			<div id="div11" class="droptarget"></div>
+			<div id="div12" class="droptarget"></div>
+			<div id="div13" class="droptarget"></div>
+			<div id="div14" class="droptarget"></div>
+			<div id="div15" class="droptarget"></div>
+			<div id="div16"></div>
+			<div id="div17" class="droptarget"></div>
+			<div id="div18" class="droptarget"></div>
+			<div id="div19" class="droptarget"></div>
+			<div id="div110" class="droptarget"></div>
+			<div id="div111" class="droptarget"></div>
+			<div id="div112" class="droptarget"></div>
+		</div>
+		<div class="thirdrow">
+			<div id="div20" class="droptarget"></div>
+			<div id="div21" class="droptarget"></div>
+			<div id="div22" class="droptarget"></div>
+			<div id="div23" class="droptarget"></div>
+			<div id="div24" class="droptarget"></div>
+			<div id="div25" class="droptarget"></div>
+			<div id="div26" class="droptarget"></div>
+			<div id="div27" class="droptarget"></div>
+			<div id="div28" class="droptarget"></div>
+			<div id="div29" class="droptarget"></div>
+			<div id="div210" class="droptarget"></div>
+			<div id="div211" class="droptarget"></div>
+			<div id="div212" class="droptarget"></div>
+		</div>
+		<div class="fouthrow">
+			<div id="div30" class="droptarget"></div>
+			<div id="div31" class="droptarget"></div>
+			<div id="div32" class="droptarget"></div>
+			<div id="div33" class="droptarget"></div>
+			<div id="div34" class="droptarget"></div>
+			<div id="div35" class="droptarget"></div>
+			<div id="div36"></div>
+			<div id="div37" class="droptarget"></div>
+			<div id="div38" class="droptarget"></div>
+			<div id="div39" class="droptarget"></div>
+			<div id="div310" class="droptarget"></div>
+			<div id="div311" class="droptarget"></div>
+			<div id="div312" class="droptarget"></div>
+		</div>
+		<div class="fifthrow">
+			<div id="div40" class="droptarget"></div>
+			<div id="div41" class="droptarget"></div>
+			<div id="div42" class="droptarget"></div>
+			<div id="div43" class="droptarget"></div>
+			<div id="div44" class="droptarget"></div>
+			<div id="div45" class="droptarget"></div>
+			<div id="div46" class="droptarget"></div>
+			<div id="div47" class="droptarget"></div>
+			<div id="div48" class="droptarget"></div>
+			<div id="div49" class="droptarget"></div>
+			<div id="div410" class="droptarget"></div>
+			<div id="div411" class="droptarget"></div>
+			<div id="div412" class="droptarget"></div>
+		</div>
+
+		<div class="chess" id="chess">
+			<p>Please place the chess on the chessboard</p>
+			<div id="chess0" class="draggable drag-drop" draggable="true" > 司令 </div>
+			<div id="chess1" class="draggable drag-drop" draggable="true" > 軍長 </div>
+			<div id="chess2" class="draggable drag-drop" draggable="true" > 師長 </div>
+			<div id="chess3" class="draggable drag-drop" draggable="true" > 師長 </div>
+			<div id="chess4" class="draggable drag-drop" draggable="true" > 旅長 </div>
+			<div id="chess5" class="draggable drag-drop" draggable="true" > 旅長 </div>
+			<div id="chess6" class="draggable drag-drop" draggable="true" > 團長 </div>
+			<div id="chess7" class="draggable drag-drop" draggable="true" > 團長 </div>
+			<div id="chess8" class="draggable drag-drop" draggable="true" > 營長 </div>
+			<div id="chess9" class="draggable drag-drop" draggable="true" > 營長 </div>
+			<div id="chess10" class="draggable drag-drop" draggable="true" > 連長 </div>
+			<div id="chess11" class="draggable drag-drop" draggable="true" > 連長 </div>
+			<div id="chess12" class="draggable drag-drop" draggable="true" > 連長 </div>
+			<div id="chess13" class="draggable drag-drop" draggable="true" > 排長 </div>
+			<div id="chess14" class="draggable drag-drop" draggable="true" > 排長 </div>
+			<div id="chess15" class="draggable drag-drop" draggable="true" > 排長 </div>
+			<div id="chess16" class="draggable drag-drop" draggable="true" > 工兵 </div>
+			<div id="chess17" class="draggable drag-drop" draggable="true" > 工兵 </div>
+			<div id="chess18" class="draggable drag-drop" draggable="true" > 工兵 </div>
+			<div id="chess19" class="draggable drag-drop" draggable="true" > 地雷 </div>
+			<div id="chess20" class="draggable drag-drop" draggable="true" > 地雷 </div>
+			<div id="chess21" class="draggable drag-drop" draggable="true" > 地雷 </div>
+			<div id="chess22" class="draggable drag-drop" draggable="true" > 炸彈 </div>
+			<div id="chess23" class="draggable drag-drop" draggable="true" > 炸彈 </div>
+			<div id="chess24" class="draggable drag-drop" draggable="true" > 軍旗 </div>
+		<br>
+	</div>
+
+	
+	<div class="main-menu" id="main-menu">
+		<h2>Menu</h2>
+		<li><button id="Start" class="Start" onclick="checkAllChessPlace()">Start</button></li>
+		<li><button id="ReStart" class="ReStart" onclick="window.location.href='index.html'">ReStart</button></li>
+		<li><button id="ReadMe" class="ReadMe" onclick="window.location.href='readme.html'">ReadMe</button></li>
+		<p id="timer">Timer: <span class="timer">00:59</span></p>
+	</div>
+	
+	<div class="chess-computer" id="computer">
+		<p>Computer chess</p>
+		<div id="computer0" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 司令 </div>
+		<div id="computer1" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 軍長 </div>
+		<div id="computer2" class="draggable drag-drop-computer" draggable="true" class="droptarget" > 師長 </div>
+		<div id="computer3" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 師長 </div>
+		<div id="computer4" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 旅長 </div>
+		<div id="computer5" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 旅長 </div>
+		<div id="computer6" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 團長 </div>
+		<div id="computer7" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 團長 </div>
+		<div id="computer8" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 營長 </div>
+		<div id="computer9" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 營長 </div>
+		<div id="computer10" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 連長 </div>
+		<div id="computer11" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 連長 </div>
+		<div id="computer12" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 連長 </div>
+		<div id="computer13" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 排長 </div>
+		<div id="computer14" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 排長 </div>
+		<div id="computer15" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 排長 </div>
+		<div id="computer16" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 工兵 </div>
+		<div id="computer17" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 工兵 </div>
+		<div id="computer18" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 工兵 </div>
+		<div id="computer19" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 地雷 </div>
+		<div id="computer20" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 地雷 </div>
+		<div id="computer21" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 地雷 </div>
+		<div id="computer22" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 炸彈 </div>
+		<div id="computer23" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 炸彈 </div>
+		<div id="computer24" class="draggable drag-drop-computer" draggable="true" class="droptarget"> 軍旗 </div>
+	
+	</div>
+
+
+	
+</body>
+</html>
