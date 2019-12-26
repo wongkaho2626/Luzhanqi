@@ -1,6 +1,8 @@
 # Luzhanqi
 <img src="https://github.com/wongkaho2626/Luzhanqi/blob/master/Figure%201.png"/>
 
+You can try it on https://wongkaho2626.github.io/Luzhanqi/
+
 Luzhanqi (Chinese: 陆战棋, “Land Battle Chess”) is a two-player Chinese board game (demo video at https://www.youtube.com/watch?v=zUhfxclysZU). It is a non-perfect abstract strategy game of partial information, since each player has only limited knowledge concerning the disposition of the opposing pieces. A reference can be found at https://en.wikipedia.org/wiki/Luzhanqi. You are asked to implement this game for 2 players with the following requirements:
 
 • Include a README page to describe the rules of the game which you decide to adopt.
